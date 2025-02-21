@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAYSA INVOICES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h2>Jaysa Invoices</h2>
+
+        <!-- Customer Name Input -->
+        <label class="customer-label">Customer Name:</label>
+        <input type="text" id="customerName" class="input-field" placeholder="Enter customer name">
+        <br><br>
+
+        <!-- Invoice Table -->
+        <div class="table-responsive">
+            <table id="invoiceTable">
+                <thead>
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be added dynamically -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Buttons -->
+        <button onclick="addItem()" class="add-btn">Add Item</button>
+        <button onclick="clearInvoice()" class="clear-btn">Clear Invoice</button>
+        <button onclick="downloadAsImage()" class="pdf-btn">Download</button>
+        <button onclick="saveInvoice()" class="save-btn">Save Invoice</button>
+
+        <!-- Grand Total -->
+        <h3>Total Invoice: <span id="grandTotal">0.00</span></h3>
+
+        <!-- Link to View Saved Invoices -->
+        <a href="saved-invoices.html" class="view-invoices-btn">View Saved Invoices</a>
+    </div>
+
+    <!-- Hidden container for print-friendly invoice -->
+    <div id="print-invoice" style="display: none;">
+        <h2>Jaysa Invoices</h2>
+        <p><strong>Customer Name:</strong> <span id="print-customer-name"></span></p>
+        <table id="print-invoice-table">
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added dynamically -->
+            </tbody>
+        </table>
+        <h3>Total Invoice: <span id="print-grand-total">0.00</span></h3>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

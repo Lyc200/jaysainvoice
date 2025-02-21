@@ -1,0 +1,321 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffe6f2, #ffccf2);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 10px; /* Reduced padding for mobile */
+    box-sizing: border-box;
+}
+
+/* Container for the Invoice Generator */
+.container {
+    width: 100%;
+    max-width: 100%; /* Full width on mobile */
+    padding: 15px; /* Reduced padding for mobile */
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px; /* Slightly smaller radius for mobile */
+    box-shadow: 0px 10px 30px rgba(255, 102, 179, 0.2);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Logo */
+.logo {
+    width: 80px; /* Smaller logo for mobile */
+    height: auto;
+    display: block;
+    margin: 0 auto 15px; /* Center the logo and add space below */
+    filter: drop-shadow(2px 2px 4px rgba(255, 102, 179, 0.3));
+}
+
+/* Heading (h2) */
+h2 {
+    font-size: 1.5em; /* Smaller font size for mobile */
+    color: #ff66b3;
+    margin-bottom: 15px; /* Reduced margin for mobile */
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(255, 102, 179, 0.2);
+}
+
+/* Customer Name Label and Input */
+.customer-label {
+    font-size: 1em; /* Smaller font size for mobile */
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Input Fields */
+.input-field {
+    padding: 10px; /* Smaller padding for mobile */
+    width: 100%;
+    border: 2px solid #ff66b3;
+    border-radius: 8px; /* Slightly smaller radius for mobile */
+    font-size: 0.9em; /* Smaller font size for mobile */
+    outline: none;
+    transition: 0.3s;
+    margin-bottom: 10px; /* Reduced margin for mobile */
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.input-field:focus {
+    border-color: #ff3385;
+    box-shadow: 0px 0px 8px rgba(255, 102, 179, 0.3);
+}
+
+/* Table Styles */
+.table-responsive {
+    width: 100%;
+    margin-top: 15px; /* Reduced margin for mobile */
+    overflow-x: auto; /* Allow horizontal scrolling on small screens */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px; /* Reduced margin for mobile */
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px; /* Slightly smaller radius for mobile */
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(255, 102, 179, 0.2);
+}
+
+th, td {
+    border: 1px solid #ffccf2;
+    padding: 8px; /* Smaller padding for mobile */
+    text-align: center;
+    font-size: 0.8em; /* Smaller font size for mobile */
+}
+
+th {
+    background-color: #ff66b3;
+    color: white;
+    font-size: 0.9em; /* Smaller font size for mobile */
+    font-weight: 600;
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Buttons */
+button {
+    margin-top: 10px;
+    padding: 10px 15px; /* Smaller padding for mobile */
+    background: #ff66b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px; /* Slightly smaller radius for mobile */
+    font-size: 0.9em; /* Smaller font size for mobile */
+    transition: all 0.3s;
+    margin-right: 5px; /* Reduced margin for mobile */
+    box-shadow: 0px 4px 10px rgba(255, 102, 179, 0.3);
+}
+
+button:hover {
+    background: #ff3385;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 15px rgba(255, 102, 179, 0.4);
+}
+/* Clear Invoice Button (Orange) */
+.clear-btn {
+    background: #ff9900; /* Orange */
+    color: white;
+}
+
+.clear-btn:hover {
+    background: #e68a00; /* Darker orange on hover */
+}
+
+/* Download Button (Red) */
+.pdf-btn {
+    background: #ff4d4d; /* Red */
+    color: white;
+}
+
+.pdf-btn:hover {
+    background: #cc0000; /* Darker red on hover */
+}
+.save-btn{
+    background: #4175d6;
+}
+
+/* View Saved Invoices Button (Green) */
+.view-invoices-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #28a745; /* Green */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: all 0.3s;
+    box-shadow: 0px 4px 10px rgba(40, 167, 69, 0.3); /* Green shadow */
+}
+.back-btn{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #28a745; /* Green */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: all 0.3s;
+    box-shadow: 0px 4px 10px rgba(40, 167, 69, 0.3); /* Green shadow */
+}
+.view-invoices-btn:hover {
+    background: #218838; /* Darker green on hover */
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 15px rgba(40, 167, 69, 0.4); /* Stronger shadow on hover */
+}
+/* View Saved Invoices Button (Green) */
+.view-invoices-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #28a745; /* Green */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: all 0.3s;
+    box-shadow: 0px 4px 10px rgba(40, 167, 69, 0.3); /* Green shadow */
+}
+
+.view-invoices-btn:hover {
+    background: #218838; /* Darker green on hover */
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 15px rgba(40, 167, 69, 0.4); /* Stronger shadow on hover */
+}
+
+/* Grand Total */
+h3 {
+    font-size: 1.2em; /* Smaller font size for mobile */
+    color: #555;
+    margin-top: 15px; /* Reduced margin for mobile */
+    font-weight: 600;
+}
+
+#grandTotal {
+    color: #ff66b3;
+    font-weight: bold;
+}
+
+/* Saved Invoices Section */
+.records-list {
+    max-height: 100px; /* Smaller height for mobile */
+    overflow-y: auto;
+    border: 2px solid #ffccf2;
+    border-radius: 10px;
+    padding: 5px; /* Reduced padding for mobile */
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 15px rgba(255, 102, 179, 0.2);
+}
+
+.record-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Reduced padding for mobile */
+    border-bottom: 1px solid #ffccf2;
+    transition: all 0.3s;
+}
+
+.record-item:last-child {
+    border-bottom: none;
+}
+
+.record-item:hover {
+    background: rgba(255, 102, 179, 0.1);
+    transform: translateX(5px);
+}
+
+.record-item button {
+    padding: 6px 10px; /* Smaller padding for mobile */
+    font-size: 0.8em; /* Smaller font size for mobile */
+    margin-left: 5px; /* Reduced margin for mobile */
+}
+
+/* Print-friendly invoice styles */
+#print-invoice {
+    background: white;
+    padding: 15px; /* Reduced padding for mobile */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%; /* Full width on mobile */
+    margin: 0 auto;
+    text-align: center;
+}
+
+#print-invoice h2 {
+    font-size: 1.5em; /* Smaller font size for mobile */
+    color: #ff66b3;
+    margin-bottom: 5px; /* Reduced margin for mobile */
+}
+
+#print-invoice p {
+    font-size: 1em; /* Smaller font size for mobile */
+    color: #555;
+    margin-bottom: 10px; /* Reduced margin for mobile */
+}
+
+#print-invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px; /* Reduced margin for mobile */
+}
+
+#print-invoice-table th, #print-invoice-table td {
+    border: 1px solid #ffccf2;
+    padding: 8px; /* Smaller padding for mobile */
+    text-align: center;
+    font-size: 0.8em; /* Smaller font size for mobile */
+}
+
+#print-invoice-table th {
+    background-color: #ff66b3;
+    color: white;
+    font-size: 0.9em; /* Smaller font size for mobile */
+}
+
+#print-invoice-table td {
+    background-color: #fff;
+}
+
+#print-grand-total {
+    color: #ff66b3;
+    font-weight: bold;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.4em; /* Even smaller font size for very small screens */
+    }
+
+    .input-field {
+        font-size: 0.8em; /* Smaller font size for very small screens */
+    }
+
+    button {
+        width: 100%; /* Full-width buttons on very small screens */
+        margin-right: 0;
+        margin-bottom: 10px; /* Space between stacked buttons */
+    }
+
+    th, td {
+        padding: 6px; /* Smaller padding for very small screens */
+        font-size: 0.7em; /* Smaller font size for very small screens */
+    }
+}
