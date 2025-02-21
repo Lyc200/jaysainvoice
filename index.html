@@ -43,8 +43,18 @@
         <!-- Grand Total -->
         <h3>Total Invoice: <span id="grandTotal">0.00</span></h3>
 
-        <!-- Link to View Saved Invoices -->
-        <a href="saved-invoices.html" class="view-invoices-btn">View Saved Invoices</a>
+        <!-- Saved Invoices Section -->
+        <div class="records-section">
+            <h2>Saved Invoices</h2>
+
+            <!-- Search Bar -->
+            <input type="text" id="searchInput" class="input-field" placeholder="Search by customer name">
+
+            <!-- List of Saved Customers -->
+            <div class="records-list" id="customerList">
+                <!-- Saved customers will be displayed here -->
+            </div>
+        </div>
     </div>
 
     <!-- Hidden container for print-friendly invoice -->
